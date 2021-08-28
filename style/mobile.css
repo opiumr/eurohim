@@ -1,0 +1,846 @@
+#header-menu{
+	width: 1200px;
+	height: 50px;
+	background-color: #DAE0ED;
+	margin-top:-20px;
+	position:fixed;
+	font-size: 16px;
+}
+.dws-menu *{
+ margin: 0;
+ padding: 0;
+}
+.logo-menu{
+	float:left;
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+}
+.dws-menu > ul{
+ display: flex;
+ justify-content: center;
+ width: 800px;
+ height:50px;
+}
+.dws-menu > ul li{
+ position: relative;
+ border-right: 1px solid #c7c8ca;
+}
+.dws-menu > ul li:first-child{
+ border-left: 1px solid #b2b3b5;
+}
+.dws-menu > ul li:last-child{
+ border-right: 0px solid #babbbd;
+}
+.dws-menu > ul li > a i.fa{
+ position: absolute;
+ top: 15px;
+ left: 5px;
+ font-size: 18px;
+}
+.dws-menu > ul li a{
+ display: block;
+ background:#DAE2EF;
+ padding: 16px 10px 16px 30px;
+ font-size: 14px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+.dws-menu li a:hover{
+ background: rgb(224,225,229); /* Old browsers */
+ background: -moz-linear-gradient(top,  rgba(224,225,229,1) 0%, rgba(69,69,71,1) 2%, rgba(69,69,71,1) 98%, rgba(224,225,229,1) 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(top,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to bottom,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e1e5', endColorstr='#e0e1e5',GradientType=0 ); /* IE6-9 */
+ color: #ffffff;
+ box-shadow: 1px 5px 10px -5px black;
+ transition: all 0.3s ease;
+}
+.dws-menu .active{background:#C6CCD8;color: #000000;} /*фон текущего пункта меню*/
+/*sub menu*/
+.dws-menu li ul{
+ position: absolute;
+ margin-top:0;
+ min-width: 150px;
+ display: none; /*скрыть подменю none*/
+}
+.dws-menu li > ul li{
+ border: 1px solid #c7c8ca;
+}
+.dws-menu li > ul li a{
+ padding: 10px;
+ text-transform:uppercase;
+ background: #DAE2EF;
+}
+.dws-menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.dws-menu li:hover > ul{
+ display: block;
+}
+.dws-menu [type="checkbox"],
+.dws-menu label.toggleSubmenu{
+ display: none;
+}
+.dws-menu label.toggleMenu{
+ background:#DAE2EF; 
+ display: none;
+ padding: 15px 40px;
+ text-transform: uppercase;
+ font-size: 14px;
+ cursor: pointer;
+ position: relative;
+ color: #000;
+}
+.dws-menu label.toggleMenu .fa{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 18px;
+}
+
+@media screen and (min-width:240px) and (max-width:399px) {
+body{
+	font-style:normal; font-variant:normal; font-weight:normal; font-size:50%; font-family: Arial;
+	background: #175FA3;
+}
+#container{
+width: 100%;
+margin: 0 auto;
+clear: both;
+}
+#header2{
+display: none;
+}
+#breadcrumbs {
+ display:none;
+}
+#contacts{
+max-width: 99%;
+margin-top:-50px;
+height: auto;
+float: left;
+border: 0px solid white;
+}
+#contacts h1{
+font-size: 16px;
+}
+#contacts p{
+font-size: 12px;
+}
+.hide{
+	display:none;
+}
+.hide-240-399{
+	display:none;
+}
+#hide-240-399{
+	display:none;
+}
+.hide-240-799{
+	display:none;
+}
+#hide-240-799{
+	display:none;
+}
+#main{
+max-width: 99%;
+margin-top:-50px;
+height: auto;
+float: left;
+border: 0px solid white;
+text-align: left;
+}
+#main h1{
+text-align: center;
+width: 100%;
+margin: 0px;
+padding: 5px 5px;
+font-size: 16px;
+}
+#main h2{
+text-align: center;
+width: 100%;
+margin: 0px;
+padding: 5px 5px;
+font-size: 14px;
+}
+#main p{
+text-align: justify;
+text-indent: 1.5em;
+padding: 0 5px;
+font-size: 12px;
+}
+#img-h-150{
+	height:20vw;
+	border-radius: 2px;
+}
+#img-h-150sq{
+	height:30vw;
+}
+#img-h-181sq{
+	height:22vw;
+}
+#img-h-200sq{
+	height:30vw;
+}
+#img-h-181{
+	height:50vw;
+	border-radius: 2px;
+}
+#img-h-200{
+	height:20vw;
+	border-radius: 2px;
+}
+#img-h-250{
+	height:40vw;
+	border-radius: 2px;
+}
+#img-h-300{
+	height:50vw;
+	border-radius: 2px;
+}
+#img-h-310{
+	display:none;
+}
+#img-h-441{
+	height:50vw;
+	border-radius: 2px;
+}
+#img-h-500{
+	height:40vw;
+	border-radius: 2px;
+}
+#img-h-550{
+	height:60vw;
+	border-radius: 2px;
+}
+#img-w-250{
+	width:90vw;
+	border-radius: 2px;
+}
+#img-w-260{
+	width:90vw;
+}
+#img-w-300{
+	width:80vw;
+	border-radius: 2px;
+}
+#img-w-360{
+	width:80vw;
+	border-radius: 2px;
+}
+#img-w-400{
+	width:80vw;
+	border-radius: 2px;
+}
+#img-w-420{
+	max-width:80vw;
+	border-radius: 2px;
+}
+#img-w-500{
+	width:80vw;
+	border-radius: 2px;
+}
+#img-w-600{
+	width:80vw;
+	border-radius: 2px;
+}
+#img-w-620{
+	width:90vw;
+	border-radius: 2px;
+}
+.table-c-2 td{
+	font-size: 12px;
+}
+.table-c-center td, th{
+	font-size: 12px;
+}
+.table-c-center16px th{
+	font-size: 10px;
+}
+.table-c-center16px td{
+	font-size: 10px;
+}
+.table-c-center16px img{
+	display:none;
+}
+.table-no-line TD{
+    border: 0px solid black; /* Параметры рамки */
+	font-size: 10px;
+}
+.list{										/*маркированный список*/
+    list-style-image: url(../images/list.png);
+	margin-left: 50px;
+	font-style:normal; font-variant:normal; font-weight:normal; font-size: 12px; font-family: Arial;
+} 
+.list-fa-cso li {
+  padding: 0 5px;
+  font-size:12px;
+}
+.nomer{	
+text-align: left;			/*номерной список под схему*/
+margin-left: 25%;
+font-size: 12px;
+}
+#r_bar, .liveChat, .logo-menu{
+	display:none;
+}
+#lang{
+position: fixed; /* положение */
+top: 0px; /* отступ сверху */
+right: 10px; /* отступ справа */
+width: 180px; /* ширина блока */
+height: 45px; /* высота блока */
+padding: 5px; /* отступы от границ внутри блока */
+z-index: 500;
+}
+#lang .but_ua {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 15px;
+  cursor: pointer;
+  border-radius: 0px;
+  background: url(../images/country/ua.png) center no-repeat;
+}
+#lang .but_ru {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+   top: 0px;
+  left: 75px;
+  cursor: pointer; 
+  border-radius: 0px;  
+ background: url(../images/country/ru.png) center no-repeat;
+}
+#lang .but_uk {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 135px;
+  cursor: pointer;
+  border-radius: 0px;
+  background: url(../images/country/uk.png) center no-repeat;
+}
+
+.dws-menu ul {/*раскрытие МЕНЮ по щелчку*/
+    display: none;
+}
+.dws-menu ul li{
+	border: 1px solid #AAAFB9;
+}
+.dws-menu li:hover > ul{/*чтоб само субменю не открывалось*/
+ display: none;
+}
+.dws-menu label.toggleMenu{
+ display: block;
+}
+input.toggleMenu:checked + label.toggleMenu{
+  background: #000;
+  color: #fff;
+}
+input.toggleMenu:checked ~ ul,
+input.toggleSubmenu:checked ~ ul{
+	display:block;
+	position:relative;
+}
+.dws-menu label.toggleSubmenu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+input.toggleSubmenu:checked ~ a{
+  background: grey;
+  color: #fff;
+}
+
+ .dws-menu label.toggleSubmenu .fa:before{
+  content: "\f0d7";
+  color: #000000;
+ }
+ .dws-menu label.toggleSubmenu .fa{
+  position: absolute;
+  top: 15px;
+  left: 200px;
+ 
+ }
+ .dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before{
+  content: "\f0d8";
+  color: #ffffff;
+ }
+
+}
+@media screen and (min-width:400px) and (max-width:799px) {
+body{
+	font-style:normal; font-variant:normal; font-weight:normal; font-size:50%; font-family: Arial;
+	background: #175FA3;
+}
+#container{
+width: 100%;
+margin: 0 auto;
+clear: both;
+}
+#header2{
+display: none;
+}
+#breadcrumbs {
+ display:none;
+}
+#contacts{
+max-width: 99%;
+margin-top:-50px;
+height: auto;
+float: left;
+border: 0px solid white;
+}
+#contacts h1{
+font-size: 16px;
+}
+#contacts p{
+font-size: 12px;
+}
+.hide{
+	display:none;
+}
+.hide-240-799{
+	display:none;
+}
+#hide-240-799{
+	display:none;
+}
+#main{
+max-width: 99%;
+margin-top:-50px;
+height: auto;
+float: left;
+border: 0px solid white;
+text-align: left;
+}
+#main h1{
+text-align: center;
+width: 100%;
+margin: 0px;
+padding: 5px 5px;
+font-size: 16px;
+}
+#main h2{
+text-align: center;
+width: 100%;
+margin: 0px;
+padding: 5px 5px;
+font-size: 14px;
+}
+#main p{
+text-align: justify;
+text-indent: 1.5em;
+padding: 0 5px;
+font-size: 12px;
+}
+#img-h-150{
+	height:20vw;
+	border-radius: 2px;
+}
+#img-h-181{
+	height:50vw;
+	border-radius: 2px;
+}
+#img-h-181sq{
+	height:20vw;
+}
+#img-h-200sq{
+	height:20vw;
+}
+#img-h-200{
+	height:20vw;
+	border-radius: 2px;
+}
+#img-h-250{
+	height:40vw;
+	border-radius: 2px;
+}
+#img-h-300{
+	height:50vw;
+	border-radius: 2px;
+}
+#img-h-310{
+	display:none;
+}
+#img-h-441{
+	height:50vw;
+	border-radius: 2px;
+}
+#img-h-500{
+	height:40vw;
+	border-radius: 2px;
+}
+#img-h-550{
+	height:60vw;
+	border-radius: 2px;
+}
+#img-w-180{
+	width:30vw;
+	border-radius: 2px;
+}
+#img-w-300{
+	width:80vw;
+	border-radius: 2px;
+}
+#img-w-360{
+	width:80vw;
+	border-radius: 2px;
+}
+#img-w-400{
+	width:80vw;
+	border-radius: 2px;
+}
+#img-w-420{
+	max-width:80vw;
+	border-radius: 2px;
+}
+#img-w-500{
+	width:80vw;
+	border-radius: 2px;
+}
+#img-w-600{
+	width:80vw;
+	border-radius: 2px;
+}
+#img-w-620{
+	width:90vw;
+	border-radius: 5px;
+}
+.table-c-2 td{
+	font-size: 12px;
+}
+.table-c-center td{
+	font-size: 12px;
+}
+.table-c-center th{
+	font-size: 12px;
+}
+.table-c-center14px td{
+	font-size: 10px;
+}
+.table-c-center14px th{
+	font-size: 10px;
+}
+.table-c-center16px th{
+	font-size: 12px;
+}
+.table-c-center16px td{
+	font-size: 12px;
+}
+.table-c-center16px img{
+	display: none;
+}
+.table-no-line TD{
+    border: 0px solid black; /* Параметры рамки */
+	font-size: 12px;
+}
+
+.list{										/*маркированный список*/
+    list-style-image: url(../images/list.png);
+	margin-left: 50px;
+	font-style:normal; font-variant:normal; font-weight:normal; font-size: 12px; font-family: Arial;
+} 
+.list-fa-cso li {
+  padding: 0 5px;
+  font-size:12px;
+}
+.nomer{	
+text-align: left;			/*номерной список под схему*/
+margin-left: 25%;
+font-size: 12px;
+}
+#r_bar, .liveChat, .logo-menu{
+	display:none;
+}
+#lang{
+position: fixed; /* положение */
+top: 0px; /* отступ сверху */
+right: 10px; /* отступ справа */
+width: 180px; /* ширина блока */
+height: 45px; /* высота блока */
+padding: 5px; /* отступы от границ внутри блока */
+z-index: 500;
+}
+#lang .but_ua {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 15px;
+  cursor: pointer;
+  border-radius: 0px;
+  background: url(../images/country/ua.png) center no-repeat;
+}
+#lang .but_ru {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+   top: 0px;
+  left: 75px;
+  cursor: pointer; 
+  border-radius: 0px;  
+ background: url(../images/country/ru.png) center no-repeat;
+}
+#lang .but_uk {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 135px;
+  cursor: pointer;
+  border-radius: 0px;
+  background: url(../images/country/uk.png) center no-repeat;
+}
+
+.dws-menu ul {/*раскрытие МЕНЮ по щелчку*/
+    display: none;
+}
+.dws-menu ul li{
+	border: 1px solid #AAAFB9;
+}
+.dws-menu li:hover > ul{/*чтоб само субменю не открывалось*/
+ display: none;
+}
+.dws-menu label.toggleMenu{
+ display: block;
+}
+input.toggleMenu:checked + label.toggleMenu{
+  background: #000;
+  color: #fff;
+}
+input.toggleMenu:checked ~ ul,
+input.toggleSubmenu:checked ~ ul{
+	display:block;
+	position:relative;
+}
+.dws-menu label.toggleSubmenu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+input.toggleSubmenu:checked ~ a{
+  background: grey;
+  color: #fff;
+}
+
+ .dws-menu label.toggleSubmenu .fa:before{
+  content: "\f0d7";
+  color: #000000;
+ }
+ .dws-menu label.toggleSubmenu .fa{
+  position: absolute;
+  top: 15px;
+  left: 200px;
+ 
+ }
+ .dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before{
+  content: "\f0d8";
+  color: #ffffff;
+ }
+
+}
+@media screen and (min-width:800px) and (max-width:1200px) {
+body{
+	font-style:normal; font-variant:normal; font-weight:normal; font-size:75%; font-family: Arial;
+	background: #175FA3;
+}
+#container{
+width: 100%;
+margin: 0 auto;
+clear: both;
+}
+#header2{
+display: none;
+}
+#contacts{
+max-width: 99%;
+margin-top:-50px;
+height: auto;
+float: left;
+border: 0px solid white;
+}
+#contacts h1{
+font-size: 20px;
+}
+#contacts p{
+font-size: 16px;
+}
+#breadcrumbs {
+ display:none;
+}
+.hide{
+	display:none;
+}
+#main{
+min-width: 100%;
+max-width: 100%;
+margin-top:-50px;
+height: auto;
+float: left;
+border: 0px solid white;
+text-align: left;
+}
+#main h1{
+text-align: center;
+width: 100%;
+margin: 0px;
+padding: 5px 5px;
+font-size: 20px;
+}
+#main h2{
+text-align: center;
+width: 100%;
+margin: 0px;
+padding: 5px 5px;
+font-size: 18px;
+}
+#main p{
+text-align: justify;
+text-indent: 1.5em;
+padding: 0 5px;
+font-size: 16px;
+}
+#img-h-200{
+	max-width:40vw;
+	border-radius: 10px;
+}
+.table-c-2 td{
+	font-size: 16px;
+}
+.table-c-center th{
+	font-size: 16px;
+}
+.table-c-center td{
+	font-size: 16px;
+}
+.table-c-center12px TD, th{
+	font-size: 10px;
+}
+.table-no-line TD{
+    border: 0px solid black; /* Параметры рамки */
+	font-size: 16px;
+}
+.list{										/*маркированный список*/
+    list-style-image: url(../images/list.png);
+	margin-left: 50px;
+	font-style:normal; font-variant:normal; font-weight:normal; font-size: 16px; font-family: Arial;
+} 
+.list-fa-cso li {
+  padding: 0 5px;
+  font-size:16px;
+}
+.nomer{	
+text-align: left;			/*номерной список под схему*/
+margin-left: 25%;
+font-size: 16px;
+}
+#r_bar, .liveChat, .logo-menu{
+	display:none;
+}
+#lang{
+position: fixed; /* положение */
+top: 0px; /* отступ сверху */
+right: 10px; /* отступ справа */
+width: 180px; /* ширина блока */
+height: 45px; /* высота блока */
+padding: 5px; /* отступы от границ внутри блока */
+z-index: 500;
+}
+#lang .but_ua {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 15px;
+  cursor: pointer;
+  border-radius: 0px;
+  background: url(../images/country/ua.png) center no-repeat;
+}
+#lang .but_ru {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+   top: 0px;
+  left: 75px;
+  cursor: pointer; 
+  border-radius: 0px;  
+ background: url(../images/country/ru.png) center no-repeat;
+}
+#lang .but_uk {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 135px;
+  cursor: pointer;
+  border-radius: 0px;
+  background: url(../images/country/uk.png) center no-repeat;
+}
+
+.dws-menu ul {/*раскрытие МЕНЮ по щелчку*/
+    display: none;
+}
+.dws-menu ul li{
+	border: 1px solid #AAAFB9;
+}
+.dws-menu li:hover > ul{/*чтоб само субменю не открывалось*/
+ display: none;
+}
+.dws-menu label.toggleMenu{
+ display: block;
+}
+input.toggleMenu:checked + label.toggleMenu{
+  background: #000;
+  color: #fff;
+}
+input.toggleMenu:checked ~ ul,
+input.toggleSubmenu:checked ~ ul{
+	display:block;
+	position:relative;
+}
+.dws-menu label.toggleSubmenu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+input.toggleSubmenu:checked ~ a{
+  background: grey;
+  color: #fff;
+}
+
+ .dws-menu label.toggleSubmenu .fa:before{
+  content: "\f0d7";
+  color: #000000;
+ }
+ .dws-menu label.toggleSubmenu .fa{
+  position: absolute;
+  top: 15px;
+  left: 200px;
+ 
+ }
+ .dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before{
+  content: "\f0d8";
+  color: #ffffff;
+ }
+
+}

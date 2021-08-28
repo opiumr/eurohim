@@ -1,0 +1,108 @@
+#block-center{
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+}
+#block-left{
+    width: 500px;
+    height: 200px;
+    margin-right: auto;
+	border: 1px solid red;
+}
+#block-right{
+    width: 500px;
+    height: 200px;
+    margin-left: auto;
+	border: 1px solid red;
+}
+.content
+{
+text-align:left;
+width:80%;
+border:2px solid gray;
+background:silver;
+box-shadow:0 0 10pt #727272;
+margin: 0 auto;
+
+
+border-radius:4pt;
+}
+.block{
+margin:10pt;
+padding:10pt;
+border:2px solid red;
+border-radius:4pt;
+width:250px;
+height:200px;
+display:inline-block;
+vertical-align: middle;
+}
+.left-content
+{
+position:relative;
+width:200px;
+height:200px;
+float:left;
+border: 1px solid blue;
+}
+.center-content
+{
+position:relative;
+height:200px;
+width:200px;
+float:left;
+border: 1px solid yellow;
+}
+.right-content
+{
+position:relative;
+width:200px;
+height:200px;
+float:left;
+border: 1px solid white;
+}
+input[type=text] {
+    font-size: 14pt;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+input[type=password] {
+    font-size: 14pt;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+input[type=password]:focus {
+    border-color:#333;
+}
+input[type=submit] {
+    padding:5px 15px;
+	
+width:100px;
+
+    background: red; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+#submit {
+ color: black; /*цвет надписи*/
+ font-size: 14pt;
+ width: 135px;
+ height: 40px;
+ border: none;
+ margin: 0;
+ padding: 0;
+ background: #0c0 url(image) 0 0 no-repeat; 
+}

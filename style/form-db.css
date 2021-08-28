@@ -1,0 +1,12 @@
+#block-center{
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+}
+#title-form{
+	font: bold 14px sans-serif;
+    margin-left: 0px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+    color: #8C8C8C;
+}

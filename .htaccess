@@ -1,0 +1,9 @@
+AddDefaultCharset UTF-8
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.rwk.com.ua$ [NC]
+RewriteRule ^(.*)$ http://rwk.com.ua/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} /(.*)index.php.*$
+RewriteRule .* /%1 [R=301,L]
+RewriteRule ^([^.?]+)$ %{REQUEST_URI}.php [L]
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+ErrorDocument 404 /error404.php
